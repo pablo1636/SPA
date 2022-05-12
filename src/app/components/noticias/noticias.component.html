@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
+
+
+    <div *ngFor="let noticia of nuevasNoticias"   class="card">
+      <img [src]="noticia.imagen" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ noticia.titulo }}</h5>
+        <p class="card-text">{{ noticia.cuerpo }}</p>
+      </div>
+    </div>
+  </div>
